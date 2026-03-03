@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Serviços - Petrito</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1><a href="index.html">Petrito 🐾</a></h1>
+    <nav>
+        <a href="carrinho.html">Carrinho</a>
+    </nav>
+</header>
+
+<section class="servicos">
+    <h2>Nossos Serviços 🐾</h2>
+    <p class="subtitulo">Cuidamos do seu pet com carinho e profissionalismo!</p>
+
+    <div class="servicos-container">
+
+        <!-- Serviço 1 -->
+        <div class="card-servico">
+            <img src="IMG/servico1.jpg" alt="Banho em pet">
+            <h3>Banho Completo</h3>
+            <p>Inclui lavagem, secagem e perfume especial.</p>
+            <span class="preco">R$ 60,00</span>
+            <button onclick="adicionarCarrinho('Banho Completo')">Agendar</button>
+        </div>
+
+        <!-- Serviço 2 -->
+        <div class="card-servico">
+            <img src="IMG/servico2.png" alt="Tosa">
+            <h3>Tosa Higiênica</h3>
+            <p>Higiene e cuidado com acabamento profissional.</p>
+            <span class="preco">R$ 75,00</span>
+            <button onclick="adicionarCarrinho('Tosa Higiênica')">Agendar</button>
+        </div>
+
+        <!-- Serviço 3 -->
+        <div class="card-servico">
+            <img src="IMG/servico3.png" alt="Consulta veterinária">
+            <h3>Consulta Veterinária</h3>
+            <p>Avaliação completa com veterinário especializado.</p>
+            <span class="preco">R$ 120,00</span>
+            <button onclick="adicionarCarrinho('Consulta Veterinária')">Agendar</button>
+        </div>
+
+    </div>
+</section>
+
+<footer class="index__footer">
+    <p>&copy; 2026 PetVida - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

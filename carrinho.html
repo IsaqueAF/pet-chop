@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho - Petrito</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1><a href="index.html">Petrito 🐾</a></h1>
+    <nav>
+        <a href="carrinho.html">Carrinho</a>
+    </nav>
+</header>
+
+<section class="carrinho">
+    <h2>Seu Carrinho 🛒</h2>
+
+    <div class="carrinho-container">
+
+        <script>
+            obterProdutos().forEach(element => {
+                document.write(`
+                    <div class="item-carrinho">
+    
+                        <div class="info-produto">
+                            <h3>${element[0]}</h3>
+
+                            <div class="quantidade">
+                                <button>-</button>
+                                <span>${element[1]}</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+
+                        <div class="subtotal">
+                            <p>Subtotal</p>
+                            <strong>R$ ${Produtos[Produtos.findIndex(item => item[0] === element[0])][1]},00</strong>
+                        </div>
+
+                        <button class="remover">Remover</button>
+                        
+                    </div>
+                `)
+            });
+        </script>
+
+    </div>
+
+    <!-- faz um javascript pra resumir -->
+    <div class="resumo">
+       
+
+        <button class="finalizar">Finalizar Compra</button>
+    </div>
+
+</section>
+
+<footer class="index__footer">
+    <p>&copy; 2026 PetVida - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

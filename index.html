@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Petrito - Seu Pet Feliz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- 🔹 HEADER -->
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">Petrito 🐾</a></h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="#beneficios">Contato</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🔹 BANNER PRINCIPAL -->
+    <section  class="hero" id="hero">
+        <h2>Tudo que seu pet precisa em um só lugar</h2>
+        <p>Rações, brinquedos, acessórios e muito mais!</p>
+        <button>Ver Produtos</button>
+    </section>
+
+    <!-- 🔹 CATEGORIAS -->
+    <section class="categorias" id="categorias">
+        <h2>Categorias</h2>
+
+        <div class="categoria-container">
+            <a href="cachorro.html" class="categoria">🐶 Cachorros</a>
+            <a href="gato.html" class="categoria">🐱 Gatos</a>
+            <a href="passaro.html" class="categoria">🐦 Aves</a>
+            <a href="peixe.html" class="categoria">🐠 Peixes</a>
+        </div>
+    </section>
+
+    <!-- 🔹 PRODUTOS -->
+    <section class="produtos" id="produtos">
+        <h2>Produtos em Destaque</h2>
+
+        <div class="produtos-container">
+            <div class="produto">
+                <h3>Ração Premium</h3>
+                <p>R$ 120,00</p>
+                <button onclick="adicionarCarrinho('Ração Premium')">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto">
+                <h3>Brinquedo Mordedor</h3>
+                <p>R$ 35,00</p>
+                <button onclick="adicionarCarrinho('Brinquedo Mordedor')">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔹 BENEFÍCIOS -->
+    <section class="beneficios" id="beneficios">
+        <h2>Por que comprar conosco?</h2>
+        <ul>
+            <li>🚚 Entrega rápida</li>
+            <li>💳 Parcelamento em até 12x</li>
+            <li>⭐ Produtos de qualidade</li>
+        </ul>
+    </section>
+
+    <!-- 🔹 RODAPÉ -->
+    <footer class="index__footer">
+        <p>&copy; 2026 PetVida - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
