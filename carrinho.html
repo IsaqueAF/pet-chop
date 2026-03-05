@@ -23,35 +23,36 @@
         <script>
             obterProdutos().forEach(element => {
                 document.write(`
-                    <div class="item-carrinho">
+                    <div class="item-carrinho item_carrinho_${Produtos.findIndex(item => item[0] === element[0])}">
     
                         <div class="info-produto">
                             <h3>${element[0]}</h3>
 
                             <div class="quantidade">
-                                <button>-</button>
-                                <span>${element[1]}</span>
-                                <button>+</button>
+                                <button onclick="retirarProduto('${element[0]}')">-</button>
+                                <span class="quantidade_${Produtos.findIndex(item => item[0] === element[0])}">${element[1]}</span>
+                                <button onclick="adicionarProduto('${element[0]}')">+</button>
                             </div>
                         </div>
 
                         <div class="subtotal">
-                            <p>Subtotal</p>
+                            <p>Preço Unitário</p>
                             <strong>R$ ${Produtos[Produtos.findIndex(item => item[0] === element[0])][1]},00</strong>
                         </div>
 
-                        <button class="remover">Remover</button>
+                        <button class="remover" onclick="removerProduto('${element[0]}')">Remover</button>
                         
                     </div>
                 `)
             });
+            addEventListener("load", atualizarTotal);
         </script>
 
     </div>
 
     <!-- faz um javascript pra resumir -->
     <div class="resumo">
-       
+       <h2>Total: R$ 0,00</h2>
 
         <button class="finalizar">Finalizar Compra</button>
     </div>
